@@ -1,0 +1,43 @@
+.container1{
+     
+    width: 80vw;
+    margin: auto;
+}
+.proj_container{
+    display: flex;
+    gap: 10px;
+    flex-direction:column;
+    margin-bottom: 90px;
+
+}
+.vany{
+    background-color: black;
+    
+}
+.vany1{
+    background-color: black;
+}
+.dany{
+    text-align: center;
+    font-weight: 700;
+}
+.b2{
+    display: flex;
+     gap: 20px;
+    margin: auto;
+}
+.no-border:hover{
+    border: 1px solid white;
+    box-shadow: none;
+    cursor: pointer;
+}
+@media screen and (max-width:800px) {
+    .no-border{
+        font-size: small;
+        padding: 13px ;
+    }
+    .b2{
+        display: flex;
+        flex-direction: column;
+    }
+}

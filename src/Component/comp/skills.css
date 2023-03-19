@@ -1,0 +1,209 @@
+.skill {
+    color: black;
+    text-align: center;
+    height: 95vh;
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+   
+    position: relative;
+    
+ 
+}
+ .skill::after{
+    position: absolute;
+    content: "";
+    background-color: rgb(59, 58, 58);
+    opacity: 0.4;
+     margin: auto;
+    height: 90%;
+    width: 80%;
+    margin: auto;   
+    z-index: -2; 
+    border-radius: 24px;
+
+}
+.cla{
+    border: 1px solid white;
+    width: fit-content;
+    padding: 2rem 16rem;
+    
+    margin-bottom: 2vw;
+    background: url('../../assets/back1.jpg');
+     background-attachment: fixed;
+     position: relative;
+     z-index: 1;
+     font-size: 30px;
+     border-radius: 14px;
+     margin-top: 3vw;
+     
+
+}
+
+.cla:hover{
+    border:1px solid red; 
+    box-shadow: rgba(247, 40, 12, 0.934) 0px 0px 39px;  
+       
+}
+.cla::after{
+    position: absolute;
+    content: "";
+    top: 0px;
+    right:0px;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    opacity: 0.6;
+     z-index: -1;
+     border-radius: 14px;
+}
+.swiper {
+    width: 100%;
+    height: 100%;
+  }
+  
+  .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+     
+  
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+    border-radius: 24px;
+  }
+  
+  .box{
+     /* border: 2px solid red; */
+     width: 100%;
+     height: 80%;
+     text-align: center;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     position: relative;
+    border: 1px solid white;
+
+     
+    border-radius: 50%;
+  }
+  .box:hover{
+    border: 1px solid rgb(230, 93, 93);
+
+    box-shadow: rgba(247, 40, 12, 0.934) 0px 0px 39px;  
+    border-left: 44px solid rgba(247, 40, 12, 0.934);
+    
+    transition: 0.6s ease-in-out;
+    
+  }
+   
+  .box::after{
+    position: absolute;
+    content: "";
+    top: 0px;
+    right:0px;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    opacity: 0.7;
+     z-index: -1;
+     border-radius: 50%;
+  }
+  .contan{
+    width: 70%;
+    height: 45vh;
+    /* border: 2px solid wheat; */
+    margin: auto;
+
+    background: url('../../assets/back1.jpg');
+    background-attachment: fixed;
+    position: relative;
+    padding: 13px 20px;
+    border-radius: 14px;
+     animation: xy 6s infinite linear;
+    
+  }
+  .contan::after{
+    position: absolute;
+    content: "";
+    top: 0px;
+    right:0px;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    opacity: 0.7;
+     /* z-index: -1; */
+     border-radius: 14px;
+     animation: xy 6s infinite linear;
+
+  }
+@keyframes xy {
+    10%{
+        border-bottom-left-radius: 50px;
+        border-bottom-right-radius: 40px;
+        border-top-right-radius: 35px;
+        border-top-left-radius: 60px;
+    }
+    30%{
+        border-bottom-left-radius: 30px;
+        border-bottom-right-radius:60px;
+        border-top-right-radius: 45px;
+        border-top-left-radius: 20px;
+    }
+    50%{
+        border-bottom-left-radius: 56px;
+        border-bottom-right-radius: 70px;
+        border-top-right-radius: 35px;
+        border-top-left-radius: 20px;
+    }
+    70%{
+        border-bottom-left-radius: 10px;
+        border-bottom-right-radius: 42px;
+        border-top-right-radius: 45px;
+        border-top-left-radius: 60px;
+    }
+    90%{
+        border-bottom-left-radius: 60px;
+        border-bottom-right-radius: 56px;
+        border-top-right-radius: 23px;
+        border-top-left-radius: 35px;
+    }
+    
+}
+@media screen and (max-width:800px) {
+    .contan{
+        display: none;
+
+    }
+    .cla{
+        width: 50vw;
+        padding: 5px 5px;
+        font-size: 25px;
+    }
+    .skill{
+        height: 150px;
+        display: none;
+    }
+}
+@media screen and (max-width:200px) {
+    .cla{
+        width: 50vw;
+        padding: 5px 5px;
+        font-size: 10px;
+    }
+    .skill{
+        display: none;
+    }
+
+}

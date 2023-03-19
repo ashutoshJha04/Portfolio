@@ -1,0 +1,43 @@
+nav{
+    width: auto;
+    height: 100vh;
+    background-color: black;
+    position: fixed;
+    top: 0px;
+    right: 0px;
+    padding-left: 10px;
+    padding-right: 10px;
+    z-index: 999;
+    
+}
+nav ul{
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+    align-items: center;
+     
+    
+    
+
+}
+ 
+nav ul li{
+    font-size: xx-large;
+    margin: auto 0px;
+    padding: 5px 16px;
+    padding-top: 10px;
+    border-radius: 14px;
+}
+nav ul li:hover{
+    
+    color: black;
+    background-color: rgb(80, 79, 77);
+   
+}
+@media screen and (max-width:800px) {
+    nav{
+        display: none;
+    }
+}

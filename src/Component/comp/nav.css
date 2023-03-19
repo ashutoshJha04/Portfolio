@@ -1,0 +1,153 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    color: white;
+}
+header{
+    position: relative;
+    width: auto;
+    height: 100vh;
+     color: white;
+    position: fixed;
+    overflow-y: hidden;
+    z-index: 999;
+     
+}
+.ham{
+    margin: auto;
+    padding-left: 30px;
+    cursor: pointer;
+}
+header::after{
+    content: "";
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    width: 100vw;
+    height: 100vh;
+    background: black;
+     
+    z-index:-1 ;
+}
+.navhead{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding-right:30px ;
+    height:100px;
+    gap: 100px;
+     
+     
+}
+header ul{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    /* align-items: center; */
+    /* text-align: center; */
+    
+     
+}
+header ul li{
+    margin-top: 15px;
+    padding: 10px;
+}
+header ul li:hover{
+     
+    border-right: 8px solid  rgb(251, 32, 32);
+    background-color: rgb(48, 45, 45);
+    transition: 0.2s;
+     
+    
+}
+
+header ul li a{
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    font-size: 25px;
+    padding-left: 20px;
+    text-decoration: none;
+     
+}
+header ul li a:hover {
+    text-decoration: none;
+    text-emphasis: none;
+    
+}
+ 
+ion-icons{
+    pointer-events: none;
+}
+.list{
+    width: 70%;
+    text-align: center;
+}
+.foot {
+     justify-content: center;
+     display: flex;
+     flex-direction: column;
+     margin-top: 45px;
+}
+.foot a{
+    text-align: center;
+    position: relative;
+    border: 2px solid rgb(241, 233, 233);
+    width: fit-content;
+    margin: auto;
+    margin-top: 20px;
+    padding: 13px 30px;
+    border-radius: 12px;
+    text-decoration: none;
+    cursor: pointer;
+}
+.foot  :hover{
+    background-color: rgb(133, 130, 134);
+    color: black;
+     
+}
+.large{
+    text-align: center;
+    width: 90%;
+    /* border: 2px solid white; */
+    font-size: xx-large;
+    margin-top: 70px;
+}
+#Log-in{
+    font-size: 26px;
+    
+}
+ .logo{
+    width: 100%;
+    text-align: center;
+    margin-top: 30px;
+ }
+
+#logo{
+    position: relative;
+      
+    
+    animation: animate 3s infinite linear;
+}
+@keyframes animate {
+    0%{
+        scale: 1;
+    }
+    50%{
+        scale:1.5;
+    }
+    100%{
+        scale: 1;
+    }
+    
+}
+
+@media screen and (max-width:800px) {
+     header{
+        display: none;
+     }
+}

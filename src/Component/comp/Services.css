@@ -1,0 +1,89 @@
+.servic{
+    display: flex;
+    width: 75vw;
+    margin: auto;
+     
+    
+}
+.item{
+   position: relative;
+    width:  25%;
+    height:  440px;
+    margin: auto;
+    border-radius: 34px;
+}
+.manf{
+    height:  470px;
+}
+.item::after{
+    content:"";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0px;
+    right: 0px;
+    background-color: black;
+    opacity: 0.8;
+    z-index: -1;
+    border-radius: 34px;
+
+
+}
+.price{
+    font-size: 100px;
+     text-align: center;
+     padding-top: 55px;
+     padding-bottom: 25px;
+}
+.heading{
+    text-align: center;
+    padding-bottom: 20px;
+}
+.features{
+    padding-left: 30px;
+}
+@media screen and (max-width:1230px) {
+    .price{
+        font-size: 78px;
+    }
+}
+@media screen and (max-width:980px) {
+    .price{
+        font-size: 60px;
+    }
+    .servic{
+        width: 100vw;
+        flex-direction: column-reverse;
+    }
+    .item{
+        position: relative;
+         width:  65%;
+         height:  440px;
+         margin: auto;
+         border-radius: 34px;
+         margin-bottom: 20px;
+     }
+     .manf{
+        height: 480px;
+     }
+}
+@media screen and (max-width:800px) {
+    .item::after{
+        content:"";
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0px;
+        right: 0px;
+        background-color: black;
+        opacity: 0.9;
+        z-index: -1;
+        border-radius: 34px;
+    
+    
+    }
+    .item{
+        width: 80%;
+    }
+}
+    

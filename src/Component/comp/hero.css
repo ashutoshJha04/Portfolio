@@ -1,0 +1,202 @@
+.container{
+    height: 100vh;
+    width: 95vw;
+    /* border: 2px solid red; */
+    margin: auto ;
+    /* background-color: rgb(74, 72, 72); */
+    
+    /* background-color: #00DBDE;
+background-image: linear-gradient(90deg, #457a7a 0%, #FC00FF 100%); */
+    
+    position: relative;
+    top: -20px;
+    z-index: -1;
+
+
+}
+
+.top{
+    margin: auto;
+    width: 50%;
+    height: 60px;
+    background-color: black;
+    margin-bottom: 13vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: x-large;
+    border-bottom-left-radius:22px ;
+    border-bottom-right-radius:22px ;
+    animation: anim 1s infinite linear;
+
+}
+@keyframes anim {
+    from{
+        border-left:1.5px solid red ;
+        border-right:1.5px solid red ;
+    }
+    to{
+        border-left:1.5px solid white;
+        border-right:1.5px solid white ;
+    }
+}
+.hero{
+    display: flex;
+    flex-direction: row;
+    height: 80%;
+    width: 80%;
+    margin: auto;
+    
+}
+.con{
+    width: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items:right;
+     width: 50%;
+     padding: 0px 30px;
+
+
+}
+.con h2 span{
+    padding-top: 30px;
+    color:red;
+    text-shadow: rgba(255,162,0,0.9) 0px 0px 39px;
+}
+.con p{
+    font-size: 20px;
+}
+.img{
+     
+    width: 50%;
+    height: 100%;
+    margin: auto;
+   
+}
+.img img{
+    border-radius: 55% 45% 47% 53% / 69% 36% 64% 31% ;
+    animation: aim 5s infinite linear;
+}
+@keyframes aim {
+    10%{
+        border-radius: 55% 45% 47% 53% / 69% 36% 64% 31% ;
+    }
+    30%{
+        border-radius: 55% 45% 58% 42% / 51% 36% 64% 49% ;
+    }
+    50%{
+        border-radius: 70% 30% 58% 42% / 51% 36% 64% 49% ;
+    }
+    70%{
+        border-radius: 70% 30% 58% 42% / 51% 70% 30% 49% ;
+    }
+    90%{
+        border-radius: 57% 43% 58% 42% / 71% 70% 30% 29% ;
+    }
+  
+}
+@media screen and (max-width:800px) {
+    .hero{
+        flex-direction: column-reverse;
+    }
+    .con{
+         
+        margin: auto;
+         
+        margin-top: 30px;
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+        height: 400px;
+    
+    
+    }
+    .con h2{
+        font-size: 29px;
+        text-align: center;
+    }
+    .con h1{
+        font-size: 20px;
+
+    }
+    .con p{
+        font-size: 16px;
+        text-align: center;
+    }
+    .container{
+        width: 100vw;
+        background-attachment: fixed;
+        height: 70vh;
+        clip-path: polygon(50% 100%, 100% 81%, 100% 0, 0 0, 0 81%);
+     background: url('../../assets/ashu.jpg');
+     background-size: cover;
+     position: relative;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+    
+    .container::after{
+        content: "";
+        position: absolute;
+        top: 0px;
+        right: 0px;
+        width: 100%;
+        height: 100%;
+        background-color: black;
+        opacity: 0.6;
+        z-index: -1;
+        
+    }
+    .img{
+        display: none;
+    }
+    .top{
+        display: none;
+    }
+
+}
+@media screen and (max-width:500px) {
+    .hero{}
+    .container{
+        background-size: cover;
+        height: 70vh;
+    }
+
+
+}
+@media screen and (min-height:1100px){
+    .container{
+        height: 100vh;
+        width: 100vw;
+    }
+    .con h2{
+        font-size: 34px;
+    }
+    .con h1{
+        font-size: 54px;
+    }
+} 
+@media (max-width:500px) and (max-height:500px) {
+    .container{
+        height: 80vh;
+    }
+    .con h2{
+        font-size: large;
+    }
+
+}
+@media (max-width:250px) and (max-height:400px) {
+
+.con h2{
+    font-size: small;
+}
+.con h1{
+    font-size: xx-small;
+}
+.con p{
+    font-size: x-small;
+}
+
+
+}

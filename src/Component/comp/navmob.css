@@ -1,0 +1,51 @@
+.ha{
+    display: none;
+}
+
+@media (max-width:800px) {
+    .na{
+       
+    }
+   .na ul{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-top: 10px;
+    position: absolute;
+    padding-right:10px ;
+    top: 80px;
+    right: 20px;
+    background-color: black;
+     
+
+    
+   }
+   .na ul li{
+    margin : 30px;
+   }
+   .na ul li a{
+    color: white;
+    padding: 13px 20px;
+   }
+   .na ul li a:hover{
+    background-color:rgb(67, 66, 66)
+   }
+   .na{
+    background-color: black;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 10px;
+    position: fixed;
+    padding: 13px 20px;
+    width: 100%;
+    z-index: 999;
+    
+   
+   }
+   .ha{
+    display:block
+   }
+}

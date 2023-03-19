@@ -1,0 +1,53 @@
+/* body{
+background-color: rgb(141 70 70);;
+} */
+body{
+   background: url('./assets/back1.jpg');
+   background-attachment: fixed;
+   
+    background-repeat:no-repeat;
+    background-size: cover;
+    background-position: center;
+     
+   
+}
+html{
+    scroll-behavior: smooth;
+}
+::-webkit-scrollbar{
+    width: 1rem;
+}
+::-webkit-scrollbar-track{
+    background-color:white;
+    border-radius:10px;
+}
+::-webkit-scrollbar-thumb{
+    background: black;
+   border: 3px solid transparent;
+    border-radius: 9px;
+    background-clip: content-box;
+}
+.load{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    position: fixed;
+    background-color: black;
+}
+@media screen and (max-width:600px) {
+    body{
+
+        background: none;
+        background-color: rgb(240, 228, 228);
+        /* background-attachment: fixed;
+        
+         background-repeat:no-repeat;
+         background-size: cover;
+         background-position: center;
+         background-color: black; */
+
+    }
+}
